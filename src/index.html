@@ -110,31 +110,18 @@
       <h1>Benvenuti nella nostra Community di AI</h1>
       <p>Un luogo per connettersi, imparare e condividere sull'intelligenza artificiale.</p>
     </header>
-
+    {% for post in posts %}
     <main>
       <section id="posts">
         <h2>Ultimi Post</h2>
 
         <article class="post">
-          <h3>Il Futuro dell'AI nel 2024</h3>
-          <p>Un'analisi sulle tendenze e le previsioni per l'intelligenza artificiale nell'anno in corso.</p>
-          <small>Pubblicato da: Admin il 15 Marzo 2024</small>
-        </article>
-
-        <article class="post">
-          <h3>Come iniziare con il Machine Learning</h3>
-          <p>Una guida per principianti sui primi passi nel mondo del Machine Learning.</p>
-          <small>Pubblicato da: Utente1 il 14 Marzo 2024</small>
-        </article>
-
-        <article class="post">
-          <h3>Discussione: AI Etica e Responsabile</h3>
-          <p>Condividi i tuoi pensieri sull'importanza di uno sviluppo etico e responsabile dell'AI.</p>
-          <small>Pubblicato da: Moderatore il 13 Marzo 2024</small>
+          <h3>{{post.title}}</h3>
+          <p>{{post.content}}</p>
         </article>
       </section>
     </main>
-
+    {% endfor %}
     <footer>
       <p>&copy; 2024 La mia Community di AI. Tutti i diritti riservati.</p>
     </footer>
